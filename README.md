@@ -10,6 +10,6 @@ In this project,
 
 ## Result : 
 
-### Example Data
+## Example Data
 
 You can view an example of the tabular data from the final result in the CSV file located in the example_data folder
