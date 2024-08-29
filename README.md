@@ -1,5 +1,5 @@
-# ![Hemnet Front page](info_icon.svg) Webscraping_SE_properties_Hemnet
 
+#   <img src="info_icon.svg" alt="Info Icon" width="50" height="50">   Webscraping_SE_properties_Hemnet
 
 ![Hemnet Front page](front_page.PNG)
 
