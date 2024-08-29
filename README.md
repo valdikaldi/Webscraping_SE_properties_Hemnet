@@ -30,7 +30,7 @@ To overcome the first two challenges I use the Selenium package. Unlike Beautifu
 To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price in order to thin out the results below or equal to 2.500 results. 
 
 Following is a description on how the BOT runs: 
-  * ***Step 1*** - loop over municipality names and search for properties in each
+  * ***Step 1*** - Iterate through the list of municipalities to find properties in each one.
     * I keep a list of all 290 municipalities of Sweden in a csv file - see folder *Sweden_municipalities_data* (taken from wikipedia)
     * ***Step 2*** - Get the total search results in municipality
       * ***Step 3.1*** - If total search results < 2.500 then loop over each page and extract property data
