@@ -1,4 +1,4 @@
-<span style="color: blue;">
+<span style="color: white;">
   <img src="info_icon.svg" alt="Info Icon" width="50" height="50">
 </span>
 # Webscraping_SE_properties_Hemnet
