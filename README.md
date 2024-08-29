@@ -1,4 +1,4 @@
-![info icon](info.png) 
+![info icon](info_icon.svg) 
 
 
 # Webscraping_SE_properties_Hemnet
