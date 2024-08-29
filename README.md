@@ -10,7 +10,7 @@ In order to over come few challenges I utilize the well known and powerful Selen
 
 Objective: Collect as much data on Swedish properties as possible - in a controlled and respectful manner without overloading their servers (Even though that is unlikely to happen.) 
 
-## Overview of the code : 
+## <img src="markdown_icons/code.svg" alt="Info Icon" width="50" height="25"> Overview of the code : 
 
 Unlike the previous web scraping projects, scraping this website comes with three challenges :
 
@@ -54,7 +54,7 @@ Following is a description on how the BOT runs:
 ![search](search_Stockholm_result.PNG)
 
 
-## Result : 
+## <img src="markdown_icons/result.svg" alt="Info Icon" width="50" height="25"> Result : 
 > [!TIP]
 > Although the filtering method works well in reducing the results to below 2,500 in most municipalities, it encountered some issues in the more populous municipalities, namely Stockholm and Gothenburg. One of the main issues with my approach is that I initialize the search.
 >
