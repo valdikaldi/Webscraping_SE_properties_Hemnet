@@ -57,7 +57,7 @@ Following is a description on how the BOT runs:
 > [!TIP]
 > Although the filtering method works well in reducing the results to below 2,500 in most municipalities, it encountered some issues in the more populous municipalities, namely Stockholm and Gothenburg. One of the main issues with my approach is that I initialize the search.
 >
-> Unfortunately, that was the smallest administrative boundary in Sweden that I was able to find. However, utilizing street names and municipality names will definitely allow you to extract more data 
+> Unfortunately, that was the smallest administrative boundary in Sweden that I was able to find. However, utilizing street names in combination with municipality names will definitely allow you to extract more data 
 > (if you are in the mood for that, it will take some time...) 
 
 * 1.022.572 millions transactions and 1.022.572 properties (1 to 1 ratio i.e. for each property we have 1 transaction)
