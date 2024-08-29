@@ -21,20 +21,23 @@ Unlike the previous web scraping projects, scraping this website comes with thre
   * Captcha : When I tested couple of simple scripts using BeautifulSoup and ran a few iterations over multiple pages, something seemed to trigger a CAPTCHA. It appears that they monitor users quite effectively. 
 
 ### Third and final challenge:
-  * For each page the site displays 20 properties
-  * However, regardless of the search and filter criteria set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2500 properties. 
+  * For each page the site displays 50 properties
+  * However, regardless of the search and filter criteria set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2.500 properties. 
 
 ![search](search_Stockholm_result.PNG)
 
-To overcome the first two challenges I use the Selenium package. Unlike BeautifulSoup (which is primarily used as a HTML parser) Selenium allows me to construct a BOT i.e. by using Selenium I can automate interactions with a web browser which makes my traffic seem like a human and therefore helps prevent getting blocked or trickering a CAPTCHA. 
+To overcome the first two challenges I use the Selenium package. Unlike BeautifulSoup (which is primarily used as a HTML parser) Selenium allows me to construct a BOT i.e. by using Selenium I can automate interactions with a web browser with a set of instructions which makes my traffic seem like a human and therefore helps prevent getting blocked or trickering a CAPTCHA. 
 
-To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price. 
+To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price in order to thin out the results below or equal to 10.000 results. 
 
 Following is a description on how the BOT runs: 
   * **Step 1** - loop over municipality names and search for properties in each
     * I keep a list of all 290 municipalities of Sweden in a csv file - see folder *Sweden_municipalities_data*
     * **Step 2** - Get the total search results in municipality
-      * **Step 3** - If  
+      * **Step 3.1** - If total search results < 2.500 then loop over each page and extract property data
+      * **Step 3.2** - If total search results > 2.500 then filter the data
+       * **Step 4** - Filter data by a set of predefined instructions :
+        * **Step 4.1** - Filter by property type   
 
 
 ![Search result](SearchResult_number_of_pages.PNG)
