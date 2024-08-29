@@ -1,6 +1,7 @@
-<span style="color: white;">
+<div style="background-color: lightgray; display: inline-block; padding: 5px;">
   <img src="info_icon.svg" alt="Info Icon" width="50" height="50">
-</span>
+</div>
+
 # Webscraping_SE_properties_Hemnet
 
 
