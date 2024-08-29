@@ -1,5 +1,6 @@
-<img src="info_icon.svg" alt="Info Icon" width="50" height="50" color = "white">
-
+<span style="color: blue;">
+  <img src="info_icon.svg" alt="Info Icon" width="50" height="50">
+</span>
 # Webscraping_SE_properties_Hemnet
 
 
