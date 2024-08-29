@@ -3,7 +3,7 @@
 
 ![Hemnet Front page](front_page.PNG)
 
-## <img src="info_icon.svg" alt="Info Icon" width="30" height="30"> Description : 
+## <img src="markdown_icons/info_icon.svg" alt="Info Icon" width="30" height="30"> Description : 
 In this project, I web scrape the website "www.hemnet.se", Swedens biggest property platform. I will gather historical transaction data on properties and their characteristics. 
 
 In order to over come few challenges I utilize the well known and powerful Selenium library to construct by bot.  
