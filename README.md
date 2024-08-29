@@ -23,27 +23,42 @@ Unlike the previous web scraping projects, scraping this website comes with thre
 ### Third and final challenge:
   * For each page the site displays 50 properties
   * However, regardless of the search and filter criteria set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2.500 properties. 
-
-![search](search_Stockholm_result.PNG)
+![Search result](SearchResult_number_of_pages.PNG)
 
 To overcome the first two challenges I use the Selenium package. Unlike BeautifulSoup (which is primarily used as a HTML parser) Selenium allows me to construct a BOT i.e. by using Selenium I can automate interactions with a web browser with a set of instructions which makes my traffic seem like a human and therefore helps prevent getting blocked or trickering a CAPTCHA. 
 
-To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price in order to thin out the results below or equal to 10.000 results. 
+To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price in order to thin out the results below or equal to 2.500 results. 
 
 Following is a description on how the BOT runs: 
   * **Step 1** - loop over municipality names and search for properties in each
-    * I keep a list of all 290 municipalities of Sweden in a csv file - see folder *Sweden_municipalities_data*
+    * I keep a list of all 290 municipalities of Sweden in a csv file - see folder *Sweden_municipalities_data* (taken from wikipedia)
     * **Step 2** - Get the total search results in municipality
       * **Step 3.1** - If total search results < 2.500 then loop over each page and extract property data
       * **Step 3.2** - If total search results > 2.500 then filter the data
        * **Step 4** - Filter data by a set of predefined instructions :
-        * **Step 4.1** - Filter by property type   
+       * During step 4: if any of the filtering criteria is able to achive results below or equal to 2500 results then scrape data else move to next filtering step.
+       * Note: For the criteria "number of rooms," "property size," and "transaction prices," I have predefined a set of minimum and maximum values. I based these ranges on what could be considered an "educated" guess (emphasis on the quotations
+). The ranges increment by relatively small steps to increase the likelihood of obtaining results below 2,500.
+        * **Step 4.1** - Filter by *property type*
+        * loop over each property type and extract data if results <= 2500
+        * **Step 4.2** - Filter by *number of rooms*
+        * loop over a predefined set of minimum and maximum number of room ranges 
+        * **Step 4.3** - Filter by *property size*
+        * loop over a predefined set of minimum and maximum property size ranges 
+        * * **Step 4.4** - Filter by *transaction price*
+        * loop over a predefined set of minimum and maximum transaction price ranges
+        * * **Step 4.5** - Dead end 
+        * if the bot has gone over each criteria and the results are still greater then 2.500 then it will simply take what it can get
 
-
-![Search result](SearchResult_number_of_pages.PNG)
+![search](search_Stockholm_result.PNG)
 
 
 ## Result : 
+> [!TIP]
+> Although the filtering method work well in thinning the results below 2500 in majority of municipalities it did face couple of dead ends in most populated municipalitys, namely Stockholm and Gothenburg. One of they main issues with my approach is the fact that I initiallize the search at municipality level.
+>
+> Unfortunately that was the smallest administrative boundaries of Sweden that I was able to find. However, 
+one could utilize the street names and zip codes which most definately will allow you to exctract the entire website (if you are in the mood for that - it will take some time...) 
 
 ## Example Data
 
