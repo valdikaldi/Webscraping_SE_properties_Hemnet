@@ -30,24 +30,24 @@ To overcome the first two challenges I use the Selenium package. Unlike Beautifu
 To over come the third challenge I let the BOT use the filtering criteria offered on the website i.e. property type, number of rooms, property size and transaction price in order to thin out the results below or equal to 2.500 results. 
 
 Following is a description on how the BOT runs: 
-  * **Step 1** - loop over municipality names and search for properties in each
+  * ***Step 1*** - loop over municipality names and search for properties in each
     * I keep a list of all 290 municipalities of Sweden in a csv file - see folder *Sweden_municipalities_data* (taken from wikipedia)
-    * **Step 2** - Get the total search results in municipality
-      * **Step 3.1** - If total search results < 2.500 then loop over each page and extract property data
-      * **Step 3.2** - If total search results > 2.500 then filter the data
-       * **Step 4** - Filter data by a set of predefined instructions :
+    * ***Step 2*** - Get the total search results in municipality
+      * ***Step 3.1*** - If total search results < 2.500 then loop over each page and extract property data
+      * ***Step 3.2*** - If total search results > 2.500 then filter the data
+       * ***Step 4*** - Filter data by a set of predefined instructions :
        * During step 4: if any of the filtering criteria is able to achive results below or equal to 2500 results then scrape data else move to next filtering step.
        * Note: For the criteria "number of rooms," "property size," and "transaction prices," I have predefined a set of minimum and maximum values. I based these ranges on what could be considered an "educated" guess (emphasis on the quotations
 ). The ranges increment by relatively small steps to increase the likelihood of obtaining results below 2,500.
-           * **Step 4.1** - Filter by *property type*
+           * ***Step 4.1*** - Filter by *property type*
            * loop over each property type and extract data if results <= 2500
-           * **Step 4.2** - Filter by *number of rooms*
+           * ***Step 4.2*** - Filter by *number of rooms*
            * loop over a predefined set of minimum and maximum number of room ranges 
-           * **Step 4.3** - Filter by *property size*
+           * ***Step 4.3*** - Filter by *property size*
            * loop over a predefined set of minimum and maximum property size ranges 
-           * * **Step 4.4** - Filter by *transaction price*
+           * ***Step 4.4*** - Filter by *transaction price*
            * loop over a predefined set of minimum and maximum transaction price ranges
-           * * **Step 4.5** - Dead end 
+           * ***Step 4.5*** - Dead end 
            * if the bot has gone over each criteria and the results are still greater then 2.500 then it will simply take what it can get
 
 ![search](search_Stockholm_result.PNG)
