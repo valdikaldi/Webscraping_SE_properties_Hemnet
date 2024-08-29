@@ -1,4 +1,4 @@
-<img src="info_icon.svg" alt="Info Icon" width="50" height="50">
+<img src="info_icon.svg" alt="Info Icon" width="50" height="50" color = "white">
 
 # Webscraping_SE_properties_Hemnet
 
