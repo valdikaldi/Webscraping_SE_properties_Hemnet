@@ -1,6 +1,6 @@
 # Webscraping_SE_properties_Hemnet
 
-![Boligsiden Front page](frontpage.PNG)
+
 
 ## Description : 
 In this project, 
