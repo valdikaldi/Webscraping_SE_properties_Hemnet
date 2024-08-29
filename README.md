@@ -13,14 +13,14 @@ Objective: Collect as much data on Swedish properties as possible - in a control
 
 Unlike the previous web scraping projects, scraping this website comes with three challenges :
 
-### First off
+### Challenge 1:
   * "hidden" API: There is no access to a "hidden" API, therefore there is no easy way out where we simply plug in to the API and make few GET requests.
     * Hemnet does host an API, however its use is only for brokers or broker agencies.  
 
-### Second challenge
+### Challenge 2:
   * Captcha : When I tested couple of simple scripts using BeautifulSoup and ran a few iterations over multiple pages, something seemed to trigger a CAPTCHA. It appears that they monitor users quite effectively. 
 
-### Third and final challenge:
+### Challenge 3:
   * For each page the site displays 50 properties
   * However, regardless of the search and filter criteria set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2.500 properties. 
 ![Search result](SearchResult_number_of_pages.PNG)
