@@ -64,6 +64,6 @@ Following is a description on how the BOT runs:
 * 1.022.572 millions transactions and 1.022.572 properties (1 to 1 ratio i.e. for each property we have 1 transaction)
 
 
-## Example Data
+### Example Data
 
 You can view an example of the tabular data from the final result in the CSV file located in the example_data folder
