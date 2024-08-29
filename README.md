@@ -1,4 +1,9 @@
-![info icon](info.png) # Webscraping_SE_properties_Hemnet
+![info icon](info.png) 
+<div style="background-color: lightgray; display: inline-block; padding: 10px;">
+  <img src="info.png" alt="info icon">
+</div>
+
+# Webscraping_SE_properties_Hemnet
 
 
 ![Hemnet Front page](front_page.PNG)
