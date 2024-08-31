@@ -56,7 +56,7 @@ Following is a description on how the BOT runs:
 
 ## <img src="markdown_icons/result.svg" alt="Info Icon" width="50" height="25"> Result : 
 > [!TIP]
-> Although the filtering method works well in reducing the results to below 2,500 in most municipalities, it encountered some issues in the more populous municipalities, namely Stockholm and Gothenburg. One of the main issues with my approach is that I initialize the search.
+> Although the filtering method works well in reducing the results to below 2,500 in most municipalities, it encountered some issues in the more populous municipalities, namely Stockholm and Gothenburg. One of the main issues with my approach is that I initialize the search at municipality level.
 >
 > Unfortunately, that was the smallest administrative boundary in Sweden that I was able to find. However, utilizing street names in combination with municipality names will definitely allow you to extract more data 
 > (if you are in the mood for that, it will take some time...) 
