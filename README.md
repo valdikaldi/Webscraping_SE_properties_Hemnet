@@ -23,7 +23,7 @@ Unlike the previous web scraping projects, scraping this website comes with thre
 
 ### Challenge 3:
   * For each page the site displays 50 properties
-  * However, regardless of the search and filter criteria set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2.500 properties. 
+  * However, regardless of the search input set in place, the site only allows access to 50 pages. Meaning that if we search e.g. for properties in Stockholm municipality wich leads to results of 205.885 properties, then users are only allowed access to 2.500 properties. 
 ![Search result](SearchResult_number_of_pages.PNG)
 
 To overcome the first two challenges I use the Selenium package. Unlike BeautifulSoup (which is primarily used as a HTML parser) Selenium allows me to construct a BOT i.e. by using Selenium I can automate interactions with a web browser with a set of instructions which makes my traffic seem like a human and therefore helps prevent getting blocked or trickering a CAPTCHA. 
